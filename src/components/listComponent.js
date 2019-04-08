@@ -5,18 +5,23 @@ export function NumberList(props) {
   const listItems = numbers.map((number) =>
   <li>
     <p>
-    Index: {number.index}<br/>
-    Title: {number.title}<br/>
-    About: {number.about}<br/>
-    Status: {number.status}<br/>
-    Name: {number.name}<br/>
+    {number.name}<br/>
     </p>
   </li>
 );
 return (
+  <div>
+  LIST:<br/>
   <ul>{listItems}</ul>
+  </div>
 );
 }
+
+
+// Index: {number.index}<br/>
+// Title: {number.title}<br/>
+// About: {number.about}<br/>
+// Status: {number.status}<br/>
 
 
 // "_id": "5ca7ddc6234111bcd4b4bb52",
